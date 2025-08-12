@@ -19,7 +19,6 @@ const TechStackCard = ({ name } : {name : string}) => {
   return <div className={`font-bold uppercase ${thisColor}`}>{name}</div>;
 };
 
-
 const ProjectCard = ({
   name,
   image,
@@ -32,7 +31,7 @@ const ProjectCard = ({
 } : ProjectData) => {
   return (
     <div
-      className={`${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"} project-card animate-fade-in mb-8 w-[360px] rounded-lg border px-4 py-6 shadow-xl md:mb-12 md:flex md:w-full md:gap-6 lg:mb-24 lg:border-0 lg:shadow-none xl:max-w-[1000px]`}
+      className={`${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"} project-card animate-fade-in mb-8 w-[360px] px-4 py-6 shadow-xl md:mb-12 md:flex md:w-full md:gap-6 lg:mb-24 lg:border-0 lg:shadow-none xl:max-w-[1000px]`}
     >
       <div className="relative overflow-hidden shadow-lg md:w-1/2">
         {isFeatured && (
@@ -78,7 +77,7 @@ function Projects() {
     <>
       <section className="md:my-6 lg:my-12">
         <h1 className="mx-auto py-6 text-center text-xl font-bold text-neutral-700 md:pb-12 lg:text-4xl">
-          <span className="border-b-4 border-b-amber-500">Projects</span>
+          <span className="border-b-4 border-b-amber-500">Small Projects</span>
         </h1>
 
         <div className="project-container flex flex-col items-center rounded-lg pb-6 md:py-8 lg:mb-12 lg:py-12">
